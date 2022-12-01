@@ -514,7 +514,7 @@ section div {
   main article {
     flex-wrap: wrap;
     flex-grow: 2;
-    max-width: 1920px;
+    max-width: 1200px;
     font-size: 1.5vw;
   }
 
@@ -560,7 +560,7 @@ section div {
     grid-template-rows: repeat(5, 1fr);
     margin: 0 auto;
     min-height: 100%;
-    max-width: 1200px;
+    max-width: 1920px;
   }
 
   section {
