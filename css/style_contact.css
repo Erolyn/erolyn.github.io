@@ -1,6 +1,3 @@
-/* importerer font-set brukt blant annet i forelesnings-kode*/
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;1,100&family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,500&display=swap");
-
 body {
   background-image: url(body-background.avif);
   background-repeat: no-repeat;
@@ -212,9 +209,9 @@ footer ul li a {
   min-width: 350px;
 }
 
- /* CSS FOR KART */
+/* CSS FOR KART */
 
- .responsive_map {
+.responsive_map {
   overflow: hidden;
   position: relative;
   border-radius: 4px;
@@ -234,36 +231,36 @@ footer ul li a {
   position: absolute;
 }
 
-  /* CSS FOR KONTAKT-SKJEMA */
-  
-  .contact_form {
-    border-radius: 5px;
-  }
-  
-  input[type="text"],
-  select,
-  textarea {
-    width: 100%;
-    padding: 1rem;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  input[type="submit"] {
-    background-color: #085549;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #45a049;
-  }
+/* CSS FOR KONTAKT-SKJEMA */
+
+.contact_form {
+  border-radius: 5px;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #085549;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
 
 @media only screen and (max-width: 800px) {
   .navbar {
@@ -334,13 +331,13 @@ footer ul li a {
     position: relative;
     z-index: 1;
   }
-  
+
   main article {
     flex-wrap: wrap;
     flex-grow: 2;
     max-width: 1000px;
   }
-  
+
   main article p {
     font-size: 1.5vw;
   }
@@ -426,12 +423,12 @@ footer ul li a {
     grid-area: article4;
   }
 
-   /* CSS FOR KONTAKT-SKJEMA */
-  
-   .contact_form {
+  /* CSS FOR KONTAKT-SKJEMA */
+
+  .contact_form {
     border-radius: 5px;
   }
-  
+
   input[type="text"],
   select,
   textarea {
@@ -443,7 +440,7 @@ footer ul li a {
     margin-bottom: 16px;
     resize: vertical;
   }
-  
+
   input[type="submit"] {
     background-color: #085549;
     color: white;
@@ -452,7 +449,7 @@ footer ul li a {
     border-radius: 4px;
     cursor: pointer;
   }
-  
+
   input[type="submit"]:hover {
     background-color: #45a049;
   }
@@ -468,7 +465,7 @@ footer ul li a {
     margin: 2rem;
     height: 0;
   }
-  
+
   .responsive_map iframe {
     left: 0;
     right: 0;
