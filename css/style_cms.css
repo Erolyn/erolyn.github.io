@@ -167,16 +167,6 @@ section {
   max-width: 800px;
 }
 
-#table_container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  margin: 0 auto;
-  width: 100%;
-  min-height: 500px;
-  max-width: 500px;
-}
-
 section div {
   display: flex;
   background-color: transparent;
@@ -230,9 +220,8 @@ footer ul li a {
   grid-template-columns: repeat(1, 23fr);
   grid-template-rows: repeat(1, 1fr);
   margin: 0 auto;
-  width: 100%;
   min-height: 100%;
-  max-width: 900px;
+  max-width: 100%;
 }
 
 .divider_line {
@@ -508,7 +497,7 @@ section div {
 
   #grid-container {
     display: grid;
-    width: 100%;
+    max-width: 100%;
     grid-template-areas:
       "header header header"
       " bcrumbs bcrumbs bcrumbs"
@@ -576,7 +565,6 @@ section div {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
     margin: 0 auto;
-    width: 100%;
     min-height: 100%;
     max-width: 1200px;
   }

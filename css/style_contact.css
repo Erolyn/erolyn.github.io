@@ -146,6 +146,8 @@ main article p {
 aside {
   grid-area: aside;
   display: flex;
+  max-width: 50%;
+  max-height: 100%;
 }
 
 .divider_line {
@@ -215,10 +217,9 @@ footer ul li a {
   overflow: hidden;
   position: relative;
   border-radius: 4px;
-  padding-bottom: 40%;
+  padding-bottom: 80%;
   padding-left: 90%;
   padding-right: 90%;
-  padding-top: 10%;
   margin: 2rem;
   height: 0;
 }
@@ -227,7 +228,7 @@ footer ul li a {
   left: 0;
   right: 0;
   height: 100%;
-  width: 71vw;
+  width: 100%;
   position: absolute;
 }
 
@@ -345,7 +346,7 @@ input[type="submit"]:hover {
   aside {
     grid-area: aside;
     display: flex;
-    justify-content: right;
+    justify-content: center;
   }
 
   section {
@@ -460,10 +461,12 @@ input[type="submit"]:hover {
     overflow: hidden;
     position: relative;
     border-radius: 4px;
-    padding: 120%;
+    padding: 100%;
     padding-top: 0;
     margin: 2rem;
     height: 0;
+    min-width: 80%;
+    min-height: 45%;
   }
 
   .responsive_map iframe {

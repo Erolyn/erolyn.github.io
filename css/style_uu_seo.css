@@ -222,9 +222,8 @@ footer ul li a {
   grid-template-columns: repeat(1, 23fr);
   grid-template-rows: repeat(1, 1fr);
   margin: 0 auto;
-  width: 100%;
   min-height: 100%;
-  max-width: 900px;
+  max-width: 100%;
 }
 
 .divider_line {
@@ -478,9 +477,8 @@ section div {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     margin: 0 auto;
-    width: 100%;
     min-height: 100%;
-    max-width: 1200px;
+    max-width: 100%;
   }
 
   .divider_line {
