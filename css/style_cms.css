@@ -224,12 +224,6 @@ footer ul li a {
   max-width: 100%;
 }
 
-.divider_line {
-  border-top: solid #ffffff;
-  max-width: 1920px;
-  grid-area: border;
-}
-
 section {
   padding-top: 50px;
 }
@@ -567,12 +561,6 @@ section div {
     margin: 0 auto;
     min-height: 100%;
     max-width: 1200px;
-  }
-
-  .divider_line {
-    border-top: solid #ffffff;
-    max-width: 1920px;
-    grid-area: border;
   }
 
   section {

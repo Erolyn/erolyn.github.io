@@ -150,12 +150,6 @@ aside {
   max-height: 100%;
 }
 
-.divider_line {
-  border-top: solid #ffffff;
-  max-width: 1920px;
-  grid-area: border;
-}
-
 section {
   display: flex;
   flex-flow: wrap;
@@ -403,11 +397,6 @@ input[type="submit"]:hover {
     padding-top: 50px;
   }
 
-  .divider_line {
-    border-top: solid #ffffff;
-    max-width: 1920px;
-    grid-area: border;
-  }
 
   /* Kode mal-innholdsside*/
 
