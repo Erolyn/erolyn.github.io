@@ -472,7 +472,7 @@ section div {
     grid-template-rows: repeat(3, 1fr);
     margin: 0 auto;
     min-height: 100%;
-    max-width: 100%;
+    max-width: 1200px;
   }
 
   section {
