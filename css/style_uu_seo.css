@@ -499,7 +499,7 @@ section div {
     grid-column-start: 1;
     grid-column-end: 2;
     font-weight: bold;
-    align-items: center;
+
   }
 
   #cell_3 {
@@ -533,6 +533,7 @@ section div {
     grid-row-end: 3;
     grid-column-start: 3;
     grid-column-end: 4;
+    
   }
 
   #cell_7 {
@@ -541,7 +542,6 @@ section div {
     grid-column-start: 1;
     grid-column-end: 2;
     font-weight: bold;
-    align-items: center;
   }
 
   #cell_8 {
@@ -553,8 +553,6 @@ section div {
     grid-row-end: 4;
     grid-column-start: 2;
     grid-column-end: 3;
-    justify-content: center;
-    align-items: center;
   }
 
   #cell_10 {
