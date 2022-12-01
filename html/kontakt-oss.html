@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/style_contact.css" />
+    <link rel="icon" type="image/x-icon" href="../pictures/logo.png" />
+    <title>Contact us</title>
+    <meta
+      property="og:url"
+      content="https://itstud.hiof.no/~elisesb/oblig4/html/kontakt-oss.html"
+    />
+    <meta property="og:title" content="Eksamens-nettside - Kontakt oss" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Kontakt-info og kontakt-skjema" />
+    <meta property="og:image" content="../pictures/og_picture.png" />
+    <meta property="og:image" content="Bilde av gradient med løve-staute" />
+    <meta property="og:locale" content="NO" />
+    <!-- Twitter Cards-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@hiof" />
+    <meta name="twitter:title" content="Eksamens-nettside - Kontakt Oss" />
+    <meta name="twitter:description" content="Kontakt-info og kontakt-skjema" />
+    <meta name="twitter:image" content="../pictures/og_picture.png" />
+  </head>
+  <body>
+    <div id="grid-container">
+      <!--- Top part of the website, header with navigation (main menu)-->
+      <header>
+        <!--- navigation/main menu-->
+        <nav class="navbar">
+          <div>
+            <a href="../index.html">
+              <img class="logo" src="../pictures/logo.png" alt="logo" />
+            </a>
+            <!--- picture-origin (converted to white): https://stock.adobe.com/no/images/lion-luxury-logo-icon-template-elegant-lion-logo-design-illustration-lion-head-with-crown-logo-lion-elegant-symbol/293172856  -->
+          </div>
+          <ul class="nav_list" id="mobile_list">
+            <li class="list_entry"><a href="../index.html">HJEM</a></li>
+            <li class="list_entry"><a href="uu-vs-seo.html">UU VS SEO</a></li>
+            <li class="list_entry"><a href="cms.html">CMS</a></li>
+            <li class="list_entry"><a href="analyse.html">ANALYSE</a></li>
+            <li class="list_entry">
+              <a href="kontakt-oss.html">KONTAKT OSS</a>
+            </li>
+          </ul>
+          <div class="hamburgermenu" id="buttonmenu">
+            <div class="hamburgermenu_lines"></div>
+            <div class="hamburgermenu_lines"></div>
+            <div class="hamburgermenu_lines"></div>
+          </div>
+        </nav>
+      </header>
+      <div id="breadcrumbs-container">
+        <ul id="breadcrumbs">
+          <li><a href="../index.html">HJEM</a></li>
+          <li><a href="kilder.html">KILDER</a></li>
+        </ul>
+      </div>
+      <main>
+        <article>
+          <h3><a href="../html/kontakt-oss.html">KONTAKT OSS</a></h3>
+          <p>Høgskolen i Østfold</p>
+          <p>B R A veien 4</p>
+          <p>(Postboks 700)</p>
+          <p>1757, Halden</p>
+          <br>
+          <p>Sentralbord: 69 60 80 00</p>
+          <p>postmottak@hiof.no</p>
+          <p>Faks: 69 60 80 01</p>
+          <a href="kilder_analyse.html"></a>
+        </article>
+      </main>
+      <aside>
+        <div class="responsive_map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8188.753758149571!2d11.3528033!3d59.1292475!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4e47f19c99b253b1!2s%C3%98stfold%20University%20College!5e0!3m2!1sen!2sno!4v1669224275787!5m2!1sen!2sno"
+            width="500"
+            height="500"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </aside>
+      <section>
+        <div class="contact_form">
+          <form action="form_sent.html">
+            <label for="first_name">First Name:</label>
+            <input
+              type="text"
+              id="first_name"
+              name="firstname"
+              placeholder="Your first name..."
+            />
+
+            <label for="last_name">Last Name:</label>
+            <input
+              type="text"
+              id="last_name"
+              name="lastname"
+              placeholder="Your surname..."
+            />
+
+            <label for="e_mail">Mail-adresse:</label>
+            <input type="text" id="mail" name="mail" placeholder="Mail..." />
+
+            <label for="topic">Choose a topic:</label>
+            <select id="topic" name="Topic">
+              <option value="topic_1">Topic 1</option>
+              <option value="topic_2">Topic 2</option>
+              <option value="topic_3">Topic 3</option>
+              <option value="topic_4">Topic 4</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write your reason for contacting us..."
+              style="height: 250px"
+            ></textarea>
+            <input type="submit" value="SUBMIT" />
+          </form>
+        </div>
+      </section>
+      <footer>
+        <ul>
+          <li>
+            <a href="#">
+            <img src="https://cdn-icons-png.flaticon.com/512/4494/4494475.png" alt="Facebook logo" width="50"
+              height="50" />
+            </a>
+            <!--<a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by riajulislam - Flaticon</a>-->
+          </li>
+          <li>
+            <a href="#">
+            <img src="https://cdn-icons-png.flaticon.com/512/4494/4494477.png" alt="Twitter logo for social media sharing"
+              width="50" height="50" />
+              </a>
+            <!---<a href="https://www.flaticon.com/free-icons/twitter-social-badge" title="twitter social badge icons">Twitter social badge icons created by riajulislam - Flaticon</a>-->
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://cdn-icons-png.flaticon.com/512/4494/4494488.png"
+                alt="Instagram logo for social media sharing" width="50" height="50" />
+              </a>
+            <!---<a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by riajulislam - Flaticon</a>-->
+          </li>
+          <li>
+            <a href="#">
+            <img src="https://cdn-icons-png.flaticon.com/512/179/179335.png" alt="Twitter logo for social media sharing"
+              width="50" height="50" />
+            </a>
+            <!---<a href="https://www.flaticon.com/free-icons/pinterest" title="pinterest icons">Pinterest icons created by Pixel Buddha - Flaticon</a>-->
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script src="../js/hambuger_menu.js"></script>
+  </body>
+</html>

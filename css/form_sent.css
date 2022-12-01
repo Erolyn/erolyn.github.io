@@ -1,0 +1,76 @@
+/* importerer font-set brukt blant annet i forelesnings-kode*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;1,100&family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,500&display=swap");
+
+body {
+    background-image: url(body-background.png);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-position: 100%;
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    margin: 1.5rem;
+  }
+
+
+  #grid-container {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+
+  main {
+    grid-area: "main";
+    display: flex;
+    flex-flow: wrap;
+    flex-flow: column;
+    grid-area: main;
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  main {
+    flex-grow: 2;
+    max-width: 100%;
+    font-size: 4vw;
+  }
+
+  .logo {
+    height: 170px;
+    padding: 50px;
+  }
+
+  h3{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 50px;
+  }
+
+  #border_button{
+    border: 3px solid #ffffff;
+    border-radius: 15px;
+    padding: 10px;
+  }
+
+  main a{
+    display: flex;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  main a:hover {
+    color: #085549;
+    
+  }

@@ -1,0 +1,479 @@
+/* importerer font-set brukt blant annet i forelesnings-kode*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;1,100&family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,500&display=swap");
+
+body {
+  background-image: url(body-background.png);
+  background-repeat: no-repeat;
+  background-color: #000000;
+  background-position: 100%;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  margin: 1.5rem;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "bcrumbs"
+    "main"
+    "aside"
+    "border"
+    "section"
+    "footer";
+}
+
+header {
+  grid-area: header;
+}
+
+.navbar {
+  /*background-image: url(pictures/placeholder3.png);*/
+  /* ønsker ikke å bruke bakgrunnsbilde i header grunnet design, har derfor kommentert ut koden*/
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 1px;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 22px;
+}
+
+.logo {
+  height: 70px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #021613;
+}
+
+h3 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+h3 a:hover {
+  color: #085549;
+}
+
+.nav_list {
+  list-style-type: none;
+}
+
+.list_entry {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #021613;
+}
+
+.hamburgermenu {
+  display: none;
+}
+
+.hamburgermenu_lines {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 4px;
+}
+
+/* Brødsti hentet fra forelesnings-kode med noen små modifikasjon*/
+
+#breadcrumbs-container {
+  grid-area: bcrumbs;
+  width: 100%;
+  overflow: auto;
+  text-decoration: none;
+}
+
+#breadcrumbs li {
+  display: inline-block;
+}
+
+#breadcrumbs li a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#breadcrumbs li::after {
+  content: "→";
+  margin: 0 0.2rem;
+}
+
+#breadcrumbs li:last-child:after {
+  content: "";
+  margin: 0 0.2rem;
+}
+
+#breadcrumbs li a:hover {
+  color: #085549;
+}
+
+main {
+  display: flex;
+  flex-flow: wrap;
+  flex-flow: column;
+  grid-area: main;
+  margin: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+main article {
+  flex-wrap: wrap;
+  flex-grow: 4;
+  max-width: 1000px;
+}
+
+main article p {
+  font-size: 3vw;
+}
+
+aside {
+  grid-area: aside;
+  display: flex;
+}
+
+.divider_line {
+  border-top: solid #ffffff;
+  max-width: 1920px;
+  grid-area: border;
+}
+
+section {
+  display: flex;
+  flex-flow: wrap;
+  grid-area: section;
+  justify-content: space-evenly;
+  gap: 2rem;
+  margin: 1rem;
+}
+
+section article {
+  object-fit: fill;
+  max-width: 500px;
+  min-width: 350px;
+  font-size: 4vw;
+}
+
+article a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+article a:hover {
+  color: #085549;
+  font-weight: bolder;
+}
+
+footer {
+  grid-area: footer;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  align-content: baseline;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.article-image {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  min-width: 350px;
+}
+
+ /* CSS FOR KART */
+
+ .responsive_map {
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+  padding-bottom: 40%;
+  padding-left: 90%;
+  padding-right: 90%;
+  padding-top: 10%;
+  margin: 2rem;
+  height: 0;
+}
+
+.responsive_map iframe {
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 71vw;
+  position: absolute;
+}
+
+  /* CSS FOR KONTAKT-SKJEMA */
+  
+  .contact_form {
+    border-radius: 5px;
+  }
+  
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type="submit"] {
+    background-color: #085549;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+@media only screen and (max-width: 800px) {
+  .navbar {
+    /*background-image: url(pictures/placeholder3.png);*/
+    /* ønsker ikke å bruke bakgrunnsbilde i header grunnet design, har derfor kommentert ut koden*/
+    flex-direction: column;
+    position: relative;
+  }
+
+  .logo {
+    height: 70px;
+  }
+
+  .nav_list {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    display: none;
+  }
+
+  .list_entry {
+    display: block;
+    border: 1px;
+  }
+
+  .hamburgermenu {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .article-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* BREAKPOINT NÅR SKJERMEN ER MER ENN 800PX*/
+
+@media only screen and (min-width: 800px) {
+  #grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+      "header header header"
+      "bcrumbs bcrumbs bcrumbs"
+      "main main aside"
+      "border border border"
+      "section section section"
+      "footer footer footer";
+    grid-row: 1fr 1fr 1fr;
+    grid-column: auto;
+  }
+
+  main {
+    display: flex;
+    flex-flow: wrap;
+    flex-flow: column;
+    grid-area: main;
+    margin: 1rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  main article {
+    flex-wrap: wrap;
+    flex-grow: 2;
+    max-width: 1000px;
+  }
+  
+  main article p {
+    font-size: 1.5vw;
+  }
+
+  aside {
+    grid-area: aside;
+    display: flex;
+    justify-content: right;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: center;
+    grid-area: section;
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+
+  section article {
+    flex-wrap: wrap;
+    object-fit: fill;
+    max-width: 500px;
+    min-width: auto;
+    font-size: 1vw;
+  }
+
+  section article img {
+    width: 100%;
+    object-fit: scale-down;
+  }
+
+  article p {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2rem;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+
+  footer ul {
+    display: flex;
+    list-style: none;
+    align-content: baseline;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    margin: 2rem;
+  }
+
+  footer ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  section {
+    padding-top: 50px;
+  }
+
+  .divider_line {
+    border-top: solid #ffffff;
+    max-width: 1920px;
+    grid-area: border;
+  }
+
+  /* Kode mal-innholdsside*/
+
+  .articLe1 {
+    grid-area: Artice1;
+  }
+  .article2 {
+    grid-area: article2;
+  }
+  .article3 {
+    grid-area: article3;
+  }
+  .article4 {
+    grid-area: article4;
+  }
+
+   /* CSS FOR KONTAKT-SKJEMA */
+  
+   .contact_form {
+    border-radius: 5px;
+  }
+  
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type="submit"] {
+    background-color: #085549;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  /* CSS FOR KART */
+
+  .responsive_map {
+    overflow: hidden;
+    position: relative;
+    border-radius: 4px;
+    padding: 120%;
+    padding-top: 0;
+    margin: 2rem;
+    height: 0;
+  }
+  
+  .responsive_map iframe {
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+}
