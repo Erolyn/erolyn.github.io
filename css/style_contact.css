@@ -99,6 +99,12 @@ h3 a:hover {
   text-decoration: none;
 }
 
+#breadcrumbs{
+  margin: 0;
+  padding-left: 0;
+  padding-bottom: 2em;
+}
+
 #breadcrumbs li {
   display: inline-block;
 }
@@ -303,6 +309,20 @@ input[type="submit"]:hover {
 /* BREAKPOINT NÅR SKJERMEN ER MER ENN 800PX*/
 
 @media only screen and (min-width: 800px) {
+  body {
+    background-image: url(body-background.avif);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-position: 100%;
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    margin: 1.5rem;
+    max-width: 1920px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
   #grid-container {
     display: grid;
     width: 100%;
@@ -322,7 +342,8 @@ input[type="submit"]:hover {
     flex-flow: wrap;
     flex-flow: column;
     grid-area: main;
-    margin: 1rem;
+    margin: 0;
+    padding: 0;
     position: relative;
     z-index: 1;
   }

@@ -264,13 +264,27 @@ footer ul li a {
 /* BREAKPOINT NÅR SKJERMEN ER MER ENN 800PX*/
 
 @media only screen and (min-width: 800px) {
+  body {
+    background-image: url(body-background.avif);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-position: 100%;
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    margin: 1.5rem;
+    max-width: 1920px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
   main {
     display: flex;
     flex-flow: wrap;
     flex-flow: column;
     grid-area: main;
-    margin: 2rem;
-    padding: 1rem;
+    margin: 0;
+    padding: 0;
     max-width: 40%;
     min-width: 20%;
   }
