@@ -147,13 +147,20 @@ main article {
   flex-wrap: wrap;
   flex-grow: 2;
   max-width: 1000px;
-  font-size: 4vw;
   float: left;
 }
 
-main article p {
-  font-size: 14px;
-}
+main article h3{
+  font-size: 6vw;
+  }
+  
+  main article p {
+    font-size: 3.5vw;
+  }
+  
+  main article a{
+    font-size: 5vw;
+  }
 
 aside {
   max-width: 0.5vw;
@@ -178,6 +185,10 @@ section div {
   background-color: transparent;
   /*border: 2px solid #ffffff;*/
   margin: 5px;
+}
+
+section div p{
+  font-size: 3.5vw;
 }
 
 article a {
@@ -532,8 +543,23 @@ section div {
     font-size: 1.5vw;
   }
 
+  main article {
+    flex-wrap: wrap;
+    flex-grow: 2;
+    max-width: 800px;
+    float: left;
+  }
+  
+  main article h3{
+    font-size: 1.8vw;
+  }
+  
   main article p {
-    max-width: 2fr;
+    font-size: 1.2vw;
+  }
+
+  main article a{
+    font-size: 1.6vw;
   }
 
   article a {
@@ -575,6 +601,7 @@ section div {
     margin: 0 auto;
     min-height: 100%;
     max-width: 1200px;
+    gap: 1rem;
   }
 
   section {
@@ -586,6 +613,10 @@ section div {
     background-color: transparent;
     /*border: 2px solid #ffffff;*/
     margin: 1px;
+  }
+
+  section div p{
+    font-size: 1.2vw;
   }
 
   #cell_1 {

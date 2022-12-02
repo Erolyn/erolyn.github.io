@@ -108,16 +108,23 @@ main article {
   flex-wrap: wrap;
   flex-grow: 2;
   max-width: 1000px;
-  font-size: 4vw;
   float: left;
 }
 
+main article h3{
+font-size: 6vw;
+}
+
 main article p {
-  font-size: 14px;
+  font-size: 3.5vw;
+}
+
+main article a{
+  font-size: 5vw;
 }
 
 aside {
-  max-width: 0.5vw;
+  max-width: 2.5vw;
 }
 
 .divider_line {
@@ -139,6 +146,10 @@ section div {
   background-color: transparent;
   /*border: 2px solid #ffffff;*/
   margin: 5px;
+}
+
+section div p{
+  font-size: 3.5vw;
 }
 
 article a {
@@ -302,6 +313,7 @@ section div {
   grid-column-start: 1;
   grid-column-end: 2;
   justify-content: center;
+  text-align: center;
   font-weight: bolder;
   font-size: larger;
   padding: 50px;
@@ -429,7 +441,7 @@ section div {
     grid-area: main;
     margin: 0;
     padding: 0;
-    max-width: 40%;
+    max-width: 50%;
     min-width: 20%;
   }
 
@@ -450,12 +462,20 @@ section div {
   main article {
     flex-wrap: wrap;
     flex-grow: 2;
-    max-width: 1920px;
-    font-size: 1.5vw;
+    max-width: 800px;
+    float: left;
+  }
+  
+  main article h3{
+    font-size: 1.8vw;
+  }
+  
+  main article p {
+    font-size: 1.2vw;
   }
 
-  main article p {
-    max-width: 2fr;
+  main article a{
+    font-size: 1.6vw;
   }
 
   article a {
@@ -508,6 +528,10 @@ section div {
     background-color: transparent;
     /*border: 2px solid #ffffff;*/
     margin: 15px;
+  }
+
+  section div p{
+    font-size: 1.2vw;
   }
 
   #cell_1 {
