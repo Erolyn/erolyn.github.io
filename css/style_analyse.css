@@ -715,7 +715,7 @@ section div {
     padding-right: 10%;
   }
   
-  section div {
+  section {
     display: flex;
     background-color: transparent;
     /*border: 2px solid #ffffff;*/
