@@ -1,256 +1,207 @@
 <!DOCTYPE html>
 <html lang="nb">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="En eksamens-nettside - analyse av nettsidens innhold."
-    />
-    <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="../css/fonts.css" />
-    <link rel="stylesheet" type="text/css" href="../css/style_analyse.css" />
-    <link rel="icon" type="image/x-icon" href="../pictures/logo.webp" />
-    <title>Analyse</title>
-    <meta
-      property="og:url"
-      content="https://itstud.hiof.no/~elisesb/oblig4/html/analyse.html"
-    />
-    <meta property="og:title" content="Eksamens-nettside - Analyse" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:description"
-      content="Analyse av nettstedet - vurdering av UU, SEO og heuristikk."
-    />
-    <meta property="og:image" content="../pictures/og_picture.png" />
-    <meta property="og:image" content="Bilde av gradient med løve-staute" />
-    <meta property="og:locale" content="NO" />
-    <!--Twitter Cards-->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@hiof" />
-    <meta name="twitter:title" content="Eksamens-nettside - Analyse" />
-    <meta
-      name="twitter:description"
-      content="Analyse av nettstedet - vurdering av UU, SEO og heuristikk."
-    />
-    <meta name="twitter:image" content="../pictures/og_picture.png" />
-    <script
-      src="https://kit.fontawesome.com/f7a2810fdf.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <div id="grid-container">
-      <!--- Top part of the website, header with navigation (main menu)-->
-      <header>
-        <!--- navigation/main menu-->
-        <nav class="navbar">
-          <div>
-            <a href="../index.html"
-              ><img class="logo" src="../pictures/logo.webp" alt="logo"
-            /></a>
-            <!--- picture-origin (converted to white): https://stock.adobe.com/no/images/lion-luxury-logo-icon-template-elegant-lion-logo-design-illustration-lion-head-with-crown-logo-lion-elegant-symbol/293172856  -->
-          </div>
-          <ul class="nav_list" id="mobile_list">
-            <li class="list_entry"><a href="../index.html">HJEM</a></li>
-            <li class="list_entry"><a href="uu-vs-seo.html">UU VS SEO</a></li>
-            <li class="list_entry"><a href="cms.html">CMS</a></li>
-            <li class="list_entry"><a href="analyse.html">ANALYSE</a></li>
-            <li class="list_entry">
-              <a href="kontakt-oss.html">KONTAKT OSS</a>
-            </li>
-          </ul>
-          <div class="hamburgermenu" id="buttonmenu">
-            <div class="hamburgermenu_lines"></div>
-            <div class="hamburgermenu_lines"></div>
-            <div class="hamburgermenu_lines"></div>
-          </div>
-        </nav>
-      </header>
-      <div id="breadcrumbs-container">
-        <ul id="breadcrumbs">
-          <li><a href="../index.html">HJEM</a></li>
-          <li><a href="analyse.html">ANALYSE</a></li>
-        </ul>
-      </div>
-      <main id="table_container">
-        <div id="cell_1">
-          <p>
-            Jeg har gjennomført en analyse av eget nettsted. Her har jeg vurdert
-            søkemotoroptimalisering, universell utforming og gjort en heuretisk
-            evaluering av nettstedet. Jeg har tatt utgangspunkt i
-            analyseverktøyet Google Lighthouse, samt sammenlignet nettstedet opp
-            mot retningslinjene fra UUtilsynet (WCAG 2.0).
-          </p>
-        </div>
-        <div id="cell_2">
-          <p>
-            <a href="https://developer.chrome.com/docs/lighthouse/overview/" alt="Link til infoside om lighthouse">Lighthouse</a> er et analyseverktøy utviklet av Google.
-            Ved å kjøre nettstedet i Lighthouse får man tilbakemeldinger på
-            ytelse, UU (Accessibility og Best Practice) og SEO.
-          </p>
-        </div>
-        <div id="cell_3">
-          <img
-            src="https://wd.imgix.net/image/MtjnObpuceYe3ijODN3a79WrxLU2/QXJ5lmcjHEFLTHg5B4o8.svg"
-            alt="Google Lighthouse Logo"
-            width="150"
-            height="150"
-          />
-        </div>
-        <div id="cell_4">
-          <p>
-            Alle sidene ble testet og tilbakemeldingene var tilnærmet identiske,
-            jeg har derfor valgt å fokusere på resultatene fra hjem-siden, og
-            nevner andre resultater der det er relevant.
-          </p>
-        </div>
-        <div id="cell_5">
-          <p>
-            For dette nettstedet før endringer ble gjort var resultane slik:
-          </p>
-        </div>
-        <div id="cell_6">
-          <img
-            src="../analyse_data/resultater_før.png"
-            alt="Bilde av serverstatistikk. Performance: 69, Accessibility: 100, Best Practice: 100"
-          />
-        </div>
-        <div id="cell_7">
-          <p>
-            Nettstedet hadde gode resultater for både UU og SEO, men scoret bare
-            litt over middels på ytelse - altså at nettsiden var treg.
-            Resultatene viste til at bildeformat og størrelse ikke var ideelt
-            (format var png, med relativt store størrelser), samt at import av
-            fonter og normalize-sheet også tok for lang tid.
-          </p>
-        </div>
-        <div id="cell_8">
-          <img
-            src="../analyse_data/før_problemer.png"
-            alt="Bilde av serverstatistikk. Performance: 69, Accessibility: 100, Best Practice: 100, SEO: 92"
-          />
-        </div>
-        <div id="cell_9">
-          <p>For SEOen manglet alle sidene meta description.</p>
-        </div>
-        <div id="cell_10">
-          <img
-            src="../analyse_data/før_seo.png"
-            alt="Bilde har følgende tekst: Document does not have a meta description"
-          />
-        </div>
-        <div id="cell_11">
-          <p>ENDRINGER</p>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="En eksamens-nettside - analyse av nettsidens innhold.">
+  <link rel="stylesheet" type="text/css" href="../css/normalize.css" >
+  <link rel="stylesheet" type="text/css" href="../css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="../css/style_analyse.css">
+  <link rel="icon" type="image/x-icon" href="../pictures/logo.webp">
+  <title>Analyse</title>
+  <meta property="og:url" content="https://itstud.hiof.no/~elisesb/oblig4/html/analyse.html">
+  <meta property="og:title" content="Eksamens-nettside - Analyse">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Analyse av nettstedet - vurdering av UU, SEO og heuristikk.">
+  <meta property="og:image" content="../pictures/og_picture.png">
+  <meta property="og:image" content="Bilde av gradient med løve-staute">
+  <meta property="og:locale" content="NO">
+  <!--Twitter Cards-->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@hiof">
+  <meta name="twitter:title" content="Eksamens-nettside - Analyse">
+  <meta name="twitter:description" content="Analyse av nettstedet - vurdering av UU, SEO og heuristikk.">
+  <meta name="twitter:image" content="../pictures/og_picture.png">
+  <script src="https://kit.fontawesome.com/f7a2810fdf.js" crossorigin="anonymous"></script>
+</head>
 
-        <div id="cell_12">
-          <p>
-            Jeg konverterte derfor de største bildene til AVIF- og webP-format.
-            Ikonene for sosiale medier var url-linket da siden ble testet ble
-            lastet ned og plassert i pictures-mappen. Innholdet i sheetsene som
-            ble importert fra url-er ble plassert i egne css-filer. Alle sidene
-            fikk også en egen meta-tag med en kort beskrivelse av innholdet.
-          </p>
+<body>
+  <div id="grid-container">
+    <!--- Top part of the website, header with navigation (main menu)-->
+    <header>
+      <!--- navigation/main menu-->
+      <nav class="navbar">
+        <div>
+          <a href="../index.html"><img class="logo" src="../pictures/logo.webp" alt="logo"></a>
+          <!--- picture-origin (converted to white): https://stock.adobe.com/no/images/lion-luxury-logo-icon-template-elegant-lion-logo-design-illustration-lion-head-with-crown-logo-lion-elegant-symbol/293172856  -->
         </div>
-
-        <div id="cell_13">
-          <p>
-            Selv om Lighthouse ikke fant noe som senket scoren på accessibility,
-            var jeg klar over at nettsiden hadde en del feil her. Tabellene for
-            de to innholdsidene (CMS og UU vs SEO) var langt ifra optimale på
-            mindre skjermer.
-          </p>
-        </div>
-        <div id="cell_14">
-          <p>
-            Begge tabellene ble derfor gjort om på for å være bedre skalert. Det
-            var også en del rusk i CSS og HTML med duplikater og kode som ikke
-            påvirket noen elementer. Dette har blitt endret på og er nå
-            funksjonelt.
-          </p>
-        </div>
-        <div id="cell_15">
-          <p>Etter endringer ble gjort ble resultatene slik:</p>
-        </div>
-        <div id="cell_16">
-          <p>
-            <img
-              src="../analyse_data/etter_endringer.png"
-              alt="Bilde av serverstatistikk. Performance: 98, Accessibility: 100, Best Practice: 100, SEO: 100"
-            />
-          </p>
-        </div>
-        <div id="cell_17">
-          <p>Tilgjengelighetserkæring:</p>
-        </div>
-        <div id="cell_18">
-          <p>
-            <i class="fa-solid fa-file-pdf"></i>
-            <a
-              href="../documents/WCAG_Tilgjengelighetserklring_-_Elise_S._Brun.pdf"
-            >
-              ÅPNE
-            </a>
-          </p>
-        </div>
-        <div id="cell_19">
-          <p>
-          <a href="kilder.html">KILDER</a>
-          </p>
-        </div>
-      </main>
-      <footer>
-        <ul>
-          <li>
-            <a href="#">
-              <img
-                src="../pictures/facebook.png"
-                alt="Facebook logo"
-                width="50"
-                height="50"
-              />
-            </a>
-            <!--<a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by riajulislam - Flaticon</a>-->
-          </li>
-          <li>
-            <a href="#">
-              <img
-                src="../pictures/twitter.png"
-                alt="Twitter logo for social media sharing"
-                width="50"
-                height="50"
-              />
-            </a>
-            <!---<a href="https://www.flaticon.com/free-icons/twitter-social-badge" title="twitter social badge icons">Twitter social badge icons created by riajulislam - Flaticon</a>-->
-          </li>
-          <li>
-            <a href="#">
-              <img
-                src="../pictures/instagram.png"
-                alt="Instagram logo for social media sharing"
-                width="50"
-                height="50"
-              />
-            </a>
-            <!---<a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by riajulislam - Flaticon</a>-->
-          </li>
-          <li>
-            <a href="#">
-              <img
-                src="../pictures/pinterest.png"
-                alt="Pinterest logo for social media sharing"
-                width="50"
-                height="50"
-              />
-            </a>
-            <!---<a href="https://www.flaticon.com/free-icons/pinterest" title="pinterest icons">Pinterest icons created by Pixel Buddha - Flaticon</a>-->
+        <ul class="nav_list" id="mobile_list">
+          <li class="list_entry"><a href="../index.html">HJEM</a></li>
+          <li class="list_entry"><a href="uu-vs-seo.html">UU VS SEO</a></li>
+          <li class="list_entry"><a href="cms.html">CMS</a></li>
+          <li class="list_entry"><a href="analyse.html">ANALYSE</a></li>
+          <li class="list_entry">
+            <a href="kontakt-oss.html">KONTAKT OSS</a>
           </li>
         </ul>
-      </footer>
+        <div class="hamburgermenu" id="buttonmenu">
+          <div class="hamburgermenu_lines"></div>
+          <div class="hamburgermenu_lines"></div>
+          <div class="hamburgermenu_lines"></div>
+        </div>
+      </nav>
+    </header>
+    <div id="breadcrumbs-container">
+      <ul id="breadcrumbs">
+        <li><a href="../index.html">HJEM</a></li>
+        <li><a href="analyse.html">ANALYSE</a></li>
+      </ul>
     </div>
-    <script src="../js/hambuger_menu.js"></script>
-  </body>
+    <main id="table_container">
+      <div id="cell_1">
+        <p>
+          Jeg har gjennomført en analyse av eget nettsted. Her har jeg vurdert
+          søkemotoroptimalisering, universell utforming og gjort en heuretisk
+          evaluering av nettstedet. Jeg har tatt utgangspunkt i
+          analyseverktøyet Google Lighthouse, samt sammenlignet nettstedet opp
+          mot retningslinjene fra UUtilsynet (WCAG 2.0).
+        </p>
+      </div>
+      <div id="cell_2">
+        <p>
+          <a href="https://developer.chrome.com/docs/lighthouse/overview/">Lighthouse</a> er et analyseverktøy utviklet av Google.
+          Ved å kjøre nettstedet i Lighthouse får man tilbakemeldinger på
+          ytelse, UU (Accessibility og Best Practice) og SEO.
+        </p>
+      </div>
+      <div id="cell_3">
+        <img src="https://wd.imgix.net/image/MtjnObpuceYe3ijODN3a79WrxLU2/QXJ5lmcjHEFLTHg5B4o8.svg"
+          alt="Google Lighthouse Logo" width="150" height="150">
+      </div>
+      <div id="cell_4">
+        <p>
+          Alle sidene ble testet og tilbakemeldingene var tilnærmet identiske,
+          jeg har derfor valgt å fokusere på resultatene fra hjem-siden, og
+          nevner andre resultater der det er relevant.
+        </p>
+      </div>
+      <div id="cell_5">
+        <p>
+          For dette nettstedet før endringer ble gjort var resultane slik:
+        </p>
+      </div>
+      <div id="cell_6">
+        <img src="../analyse_data/resultater_før.png"
+          alt="Bilde av serverstatistikk. Performance: 69, Accessibility: 100, Best Practice: 100">
+      </div>
+      <div id="cell_7">
+        <p>
+          Nettstedet hadde gode resultater for både UU og SEO, men scoret bare
+          litt over middels på ytelse - altså at nettsiden var treg.
+          Resultatene viste til at bildeformat og størrelse ikke var ideelt
+          (format var png, med relativt store størrelser), samt at import av
+          fonter og normalize-sheet også tok for lang tid.
+        </p>
+      </div>
+      <div id="cell_8">
+        <img src="../analyse_data/før_problemer.png"
+          alt="Bilde av serverstatistikk. Performance: 69, Accessibility: 100, Best Practice: 100, SEO: 92">
+      </div>
+      <div id="cell_9">
+        <p>For SEOen manglet alle sidene meta description.</p>
+      </div>
+      <div id="cell_10">
+        <img src="../analyse_data/før_seo.png"
+          alt="Bilde har følgende tekst: Document does not have a meta description">
+      </div>
+      <div id="cell_11">
+        <p>ENDRINGER</p>
+      </div>
+
+      <div id="cell_12">
+        <p>
+          Jeg konverterte derfor de største bildene til AVIF- og webP-format.
+          Ikonene for sosiale medier var url-linket da siden ble testet ble
+          lastet ned og plassert i pictures-mappen. Innholdet i sheetsene som
+          ble importert fra url-er ble plassert i egne css-filer. Alle sidene
+          fikk også en egen meta-tag med en kort beskrivelse av innholdet.
+        </p>
+      </div>
+
+      <div id="cell_13">
+        <p>
+          Selv om Lighthouse ikke fant noe som senket scoren på accessibility,
+          var jeg klar over at nettsiden hadde en del feil her. Tabellene for
+          de to innholdsidene (CMS og UU vs SEO) var langt ifra optimale på
+          mindre skjermer.
+        </p>
+      </div>
+      <div id="cell_14">
+        <p>
+          Begge tabellene ble derfor gjort om på for å være bedre skalert. Det
+          var også en del rusk i CSS og HTML med duplikater og kode som ikke
+          påvirket noen elementer. Dette har blitt endret på og er nå
+          funksjonelt.
+        </p>
+      </div>
+      <div id="cell_15">
+        <p>Etter endringer ble gjort ble resultatene slik:</p>
+      </div>
+      <div id="cell_16">
+        <p>
+          <img src="../analyse_data/etter_endringer.png"
+            alt="Bilde av serverstatistikk. Performance: 98, Accessibility: 100, Best Practice: 100, SEO: 100">
+        </p>
+      </div>
+      <div id="cell_17">
+        <p>Tilgjengelighetserkæring:</p>
+      </div>
+      <div id="cell_18">
+        <p>
+          <i class="fa-solid fa-file-pdf"></i>
+          <a href="../documents/WCAG_Tilgjengelighetserklring_-_Elise_S._Brun.pdf">
+            ÅPNE
+          </a>
+        </p>
+      </div>
+      <div id="cell_19">
+        <p>
+          <a href="kilder.html">KILDER</a>
+        </p>
+      </div>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a href="#">
+            <img src="../pictures/facebook.png" alt="Facebook logo" width="50" height="50">
+          </a>
+          <!--<a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by riajulislam - Flaticon</a>-->
+        </li>
+        <li>
+          <a href="#">
+            <img src="../pictures/twitter.png" alt="Twitter logo for social media sharing" width="50" height="50">
+          </a>
+          <!---<a href="https://www.flaticon.com/free-icons/twitter-social-badge" title="twitter social badge icons">Twitter social badge icons created by riajulislam - Flaticon</a>-->
+        </li>
+        <li>
+          <a href="#">
+            <img src="../pictures/instagram.png" alt="Instagram logo for social media sharing" width="50" height="50">
+          </a>
+          <!---<a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by riajulislam - Flaticon</a>-->
+        </li>
+        <li>
+          <a href="#">
+            <img src="../pictures/pinterest.png" alt="Pinterest logo for social media sharing" width="50" height="50">
+          </a>
+          <!---<a href="https://www.flaticon.com/free-icons/pinterest" title="pinterest icons">Pinterest icons created by Pixel Buddha - Flaticon</a>-->
+        </li>
+      </ul>
+    </footer>
+  </div>
+  <script src="../js/hambuger_menu.js"></script>
+</body>
+
 </html>

@@ -1,268 +1,241 @@
 <!DOCTYPE html>
 <html lang="nb">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-    name="description"
-    content="En eksamens-nettside - en beskrivelse av CMS og tre kjente CMSer."
-  />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../css/normalize.css"
-    />
-    <link rel="stylesheet" type="text/css" href="../css/style_cms.css" />
-    <link rel="stylesheet" type="text/css" href="../css/fonts.css />
-    <link rel="icon" type="image/x-icon" href="../pictures/logo.webp" />
-    <title>CMS</title>
-    <meta
-      property="og:url"
-      content="https://itstud.hiof.no/~elisesb/oblig4/html/cms.html"
-    />
-    <meta property="og:title" content="Eksamens-nettside - CMS" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="En beskrivelse av CMS og sammeligning av tre kjente CMSer." />
-    <meta property="og:image" content="../pictures/og_picture.png" />
-    <meta property="og:image" content="Bilde av gradient med løve-staute" />
-    <meta property="og:locale" content="NO" />
-    <!--Twitter Cards-->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@hiof" />
-    <meta name="twitter:title" content="Eksamens-nettside - CMS" />
-    <meta name="twitter:description" content="Kontakt-info og kontakt-skjema" />
-    <meta name="twitter:image" content="../pictures/og_picture.png" />
-  </head>
-  <body>
-    <div id="grid-container">
-      <!--- Top part of the website, header with navigation (main menu)-->
-      <header>
-        <!--- navigation/main menu-->
-        <nav class="navbar">
-          <div>
-            <a href="../index.html"
-              ><img class="logo" src="../pictures/logo.webp" alt="logo"
-            /></a>
-            <!--- picture-origin (converted to white): https://stock.adobe.com/no/images/lion-luxury-logo-icon-template-elegant-lion-logo-design-illustration-lion-head-with-crown-logo-lion-elegant-symbol/293172856  -->
-          </div>
-          <ul class="nav_list" id="mobile_list">
-            <li class="list_entry"><a href="../index.html">HJEM</a></li>
-            <li class="list_entry"><a href="uu-vs-seo.html">UU VS SEO</a></li>
-            <li class="list_entry"><a href="cms.html">CMS</a></li>
-            <li class="list_entry"><a href="analyse.html">ANALYSE</a></li>
-            <li class="list_entry">
-              <a href="kontakt-oss.html">KONTAKT OSS</a>
-            </li>
-          </ul>
-          <div class="hamburgermenu" id="buttonmenu">
-            <div class="hamburgermenu_lines"></div>
-            <div class="hamburgermenu_lines"></div>
-            <div class="hamburgermenu_lines"></div>
-          </div>
-        </nav>
-      </header>
-      <div id="breadcrumbs-container">
-        <ul id="breadcrumbs">
-          <li><a href="../index.html">HJEM</a></li>
-          <li><a href="cms.html">CMS</a></li>
-        </ul>
-      </div>
-      <main>
-        <article>
-          <h3>CMS</h3>
-          <p>
-            CMS, også kjent som et Content Management System er en utviklings
-            software som brukes til å skape og håndtere digitalt innhold, som
-            for eksempel nettsider. Det finnes mange fordeler med et CMS, men
-            hovedpoenget med å bruke et CMS er at den nødvendige infrastrukturen
-            allerede er tilstede og eliminerer behovet for å skrive kode.
-          </p>
-          <p>
-            CMS deles hovedsakelig opp i to ulike systemer - headless og
-            traditionial CMS.
-          </p>
-          <p>
-            Et tradisjonelt CM-system gir brukeren mulighet til å påvirke både
-            front-end (hodet) og back-end (kroppen) av det digitale innholdet.
-            Det kan lagre alt av nødvendig informasjon (f.eks. tekst, bilder,
-            data), samtidig som CMSet også kan håndtere design, layout og andre
-            elementer typisk underliggende front-end utvikling.
-          </p>
-          <p>
-            Et headless CM-system mangler front-end aspektet, og brukes til å
-            endre og lagre back-end innhold. Altså håndterer de kun innholdet,
-            ikke designet. Utviklere som bruker headless har ofte stor
-            fleksibilitet med at de kan velge hvordan innholdet skal presenteres
-            (gjennom ulike APIer) avhengig av deres behov. Dette gjør riktignok
-            også et headless CMS mer komplisert å benytte.
-          </p>
-          <p></p>
-          <a href="kilder.html">KILDER</a>
-        </article>
-      </main>
-      <aside>
-        <img
-          class="lion_image"
-          src="../pictures/lion-body.webp"
-          alt="https://e7.pngegg.com/pngimages/115/588/png-clipart-gray-lion-with-hand-on-sphere-concrete-statuette-lion-lucille-ball-stone-sculpture-lion-animals-stone-carving.png"
-        />
-        <!--- picture-origin: https://www.pngegg.com/en/png-njtlc -->
-      </aside>
-      <div class="divider_line"></div>
-      <section id="table_container">
-        <div id="cell_1">
-          <p></p>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="En eksamens-nettside - en beskrivelse av CMS og tre kjente CMSer.">
+  <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../css/style_cms.css">
+  <link rel="stylesheet" type="text/css" href="../css/fonts.css">
+  <link rel=" icon" type="image/x-icon" href="../pictures/logo.webp">
+  <title>CMS</title>
+  <meta property="og:url" content="https://itstud.hiof.no/~elisesb/oblig4/html/cms.html">
+  <meta property="og:title" content="Eksamens-nettside - CMS">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="En beskrivelse av CMS og sammeligning av tre kjente CMSer.">
+  <meta property="og:image" content="../pictures/og_picture.png">
+  <meta property="og:image" content="Bilde av gradient med løve-staute">
+  <meta property="og:locale" content="NO">
+  <!--Twitter Cards-->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@hiof">
+  <meta name="twitter:title" content="Eksamens-nettside - CMS">
+  <meta name="twitter:description" content="Kontakt-info og kontakt-skjema">
+  <meta name="twitter:image" content="../pictures/og_picture.png">
+</head>
+
+<body>
+  <div id="grid-container">
+    <!--- Top part of the website, header with navigation (main menu)-->
+    <header>
+      <!--- navigation/main menu-->
+      <nav class="navbar">
+        <div>
+          <a href="../index.html"><img class="logo" src="../pictures/logo.webp" alt="logo"></a>
+          <!--- picture-origin (converted to white): https://stock.adobe.com/no/images/lion-luxury-logo-icon-template-elegant-lion-logo-design-illustration-lion-head-with-crown-logo-lion-elegant-symbol/293172856  -->
         </div>
-        <div id="cell_2">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/2048px-WordPress_blue_logo.svg.png"
-            alt="Wordpress logo - source in src-url"
-            width="50"
-            height="50"
-          />
-        </div>
-        <div id="cell_3">
-          <p>FORDELER</p>
-        </div>
-        <div id="cell_4">
-          <p>
-            WordPress er det mest brukte WCMSet med en stor brukerbase, det
-            betyr stort støttenettverk. Er gratis, men kan kjøpe templates og
-            andre funksjoner som gjør det enkelt å bruke.
-          </p>
-        </div>
-        <div id="cell_5">
-          <p>ULEMPER</p>
-        </div>
-        <div id="cell_6">
-          <p>
-            Originalt lagd for å være en blogg-side og mangler i stor grad
-            tilpasning for større og mer komplekse nettsider. Kan være vanskelig
-            å lage egne templates og oppsett.
-          </p>
-        </div>
-        <div id="cell_7">
-          <p>LIKHETER / ULIKHETER</p>
-        </div>
-        <div id="cell_8">
-          <p>
-            Designet for mindre nettsider er WordPress et godt verktøy for
-            personlige nettsider. Det er lett å sette seg inn i og kan godt
-            beskrives som et CMS for enhver og alle.
-          </p>
-        </div>
-        <div id="cell_9">
-          <img
-            src="https://www.pngall.com/wp-content/uploads/12/Joomla-PNG-File.png"
-            alt="Joombla logo - source in src-url"
-            width="50"
-            height="50"
-          />
-        </div>
-        <div id="cell_10">
-          <p>FORDELER</p>
-        </div>
-        <div id="cell_11">
-          <p>
-            Godt etablert CMS med mange brukere. Joomla er mer rettet mot
-            nettsider av større skalering. Kan fungere uten CMS-delen, noe som
-            gir større fleksbilitet.
-          </p>
-        </div>
-        <div id="cell_12">
-          <p>ULEMPER</p>
-        </div>
-        <div id="cell_13">
-          <p>
-            Noe vanskeligere å sette seg inn, grunnet den økte fleksibiliteten.
-            Ikke like godt vedlikeholdt, mye overflødig materiale i CMSet
-            (extensions and templates).
-          </p>
-        </div>
-        <div id="cell_14">
-          <p>LIKHETER / ULIKHETER</p>
-        </div>
-        <div id="cell_15">
-          <p>
-            Joombla har en litt brattere læringskurve enn WordPress, men er
-            allikevel brukervennlig nok til at det kan brukes uten
-            kode-erfaring. Faller litt midt imellom WordPress og f.eks. Drupal.
-          </p>
-        </div>
-        <div id="cell_16">
-          <img
-            src="https://leadgenapp.io/wp-content/uploads/2022/03/06f14d0c25520b2bd1ba003831e6b811.png"
-            alt="Wix logo - source in src-url"
-            width="50"
-            height="50"
-          />
-        </div>
-        <div id="cell_17">
-          <p>FORDELER</p>
-        </div>
-        <div id="cell_18">
-          <p>
-            Wix er en fullstending online-basert nettapplikasjon som lar det
-            bygge nettsider med fokus på design. Brukervennlighet (click and
-            drag) er på topp, og web-hosting er en implementert feature i
-            løsningen deres.
-          </p>
-        </div>
-        <div id="cell_19">
-          <p>ULEMPER</p>
-        </div>
-        <div id="cell_20">
-          <p>
-            Mye av det gode innholdet er gjemt bak en pay-wall. Og lite
-            fleksibilitet når det kommer til design utenfor set templates. Ikke
-            direkte lagring av innhold, må lagres via andre løsninger.
-          </p>
-        </div>
-        <div id="cell_21">
-          <p>LIKHETER / ULIKHETER</p>
-        </div>
-        <div id="cell_22">
-          <p>
-            WIX kan i utgangspunktet ikke regnes som et rent-CMS, da Wix har
-            størst fokus på design og ikke innhold. Det er allikevel en funksjon
-            for å lagre innhold via third-party applikasjoner.
-          </p>
-        </div>
-      </section>
-      <footer>
-        <ul>
-          <li>
-            <a href="#">
-            <img src="../pictures/facebook.png" alt="Facebook logo" width="50"
-              height="50" />
-            </a>
-            <!--<a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by riajulislam - Flaticon</a>-->
-          </li>
-          <li>
-            <a href="#">
-            <img src="../pictures/twitter.png" alt="Twitter logo for social media sharing"
-              width="50" height="50" />
-              </a>
-            <!---<a href="https://www.flaticon.com/free-icons/twitter-social-badge" title="twitter social badge icons">Twitter social badge icons created by riajulislam - Flaticon</a>-->
-          </li>
-          <li>
-            <a href="#">
-              <img src="../pictures/instagram.png"
-                alt="Instagram logo for social media sharing" width="50" height="50" />
-              </a>
-            <!---<a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by riajulislam - Flaticon</a>-->
-          </li>
-          <li>
-            <a href="#">
-            <img src="../pictures/pinterest.png" alt="Pinterest logo for social media sharing"
-              width="50" height="50" />
-            </a>
-            <!---<a href="https://www.flaticon.com/free-icons/pinterest" title="pinterest icons">Pinterest icons created by Pixel Buddha - Flaticon</a>-->
+        <ul class="nav_list" id="mobile_list">
+          <li class="list_entry"><a href="../index.html">HJEM</a></li>
+          <li class="list_entry"><a href="uu-vs-seo.html">UU VS SEO</a></li>
+          <li class="list_entry"><a href="cms.html">CMS</a></li>
+          <li class="list_entry"><a href="analyse.html">ANALYSE</a></li>
+          <li class="list_entry">
+            <a href="kontakt-oss.html">KONTAKT OSS</a>
           </li>
         </ul>
-      </footer>
+        <div class="hamburgermenu" id="buttonmenu">
+          <div class="hamburgermenu_lines"></div>
+          <div class="hamburgermenu_lines"></div>
+          <div class="hamburgermenu_lines"></div>
+        </div>
+      </nav>
+    </header>
+    <div id="breadcrumbs-container">
+      <ul id="breadcrumbs">
+        <li><a href="../index.html">HJEM</a></li>
+        <li><a href="cms.html">CMS</a></li>
+      </ul>
     </div>
-    <script src="../js/hambuger_menu.js"></script>
-  </body>
+    <main>
+      <article>
+        <h3>CMS</h3>
+        <p>
+          CMS, også kjent som et Content Management System er en utviklings
+          software som brukes til å skape og håndtere digitalt innhold, som
+          for eksempel nettsider. Det finnes mange fordeler med et CMS, men
+          hovedpoenget med å bruke et CMS er at den nødvendige infrastrukturen
+          allerede er tilstede og eliminerer behovet for å skrive kode.
+        </p>
+        <p>
+          CMS deles hovedsakelig opp i to ulike systemer - headless og
+          traditionial CMS.
+        </p>
+        <p>
+          Et tradisjonelt CM-system gir brukeren mulighet til å påvirke både
+          front-end (hodet) og back-end (kroppen) av det digitale innholdet.
+          Det kan lagre alt av nødvendig informasjon (f.eks. tekst, bilder,
+          data), samtidig som CMSet også kan håndtere design, layout og andre
+          elementer typisk underliggende front-end utvikling.
+        </p>
+        <p>
+          Et headless CM-system mangler front-end aspektet, og brukes til å
+          endre og lagre back-end innhold. Altså håndterer de kun innholdet,
+          ikke designet. Utviklere som bruker headless har ofte stor
+          fleksibilitet med at de kan velge hvordan innholdet skal presenteres
+          (gjennom ulike APIer) avhengig av deres behov. Dette gjør riktignok
+          også et headless CMS mer komplisert å benytte.
+        </p>
+        <p></p>
+        <a href="kilder.html">KILDER</a>
+      </article>
+    </main>
+    <aside>
+      <img class="lion_image" src="../pictures/lion-body.webp"
+        alt="https://e7.pngegg.com/pngimages/115/588/png-clipart-gray-lion-with-hand-on-sphere-concrete-statuette-lion-lucille-ball-stone-sculpture-lion-animals-stone-carving.png">
+      <!--- picture-origin: https://www.pngegg.com/en/png-njtlc -->
+    </aside>
+    <div class="divider_line"></div>
+    <section id="table_container">
+      <div id="cell_1">
+        <p></p>
+      </div>
+      <div id="cell_2">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/2048px-WordPress_blue_logo.svg.png"
+          alt="Wordpress logo - source in src-url" width="50" height="50">
+      </div>
+      <div id="cell_3">
+        <p>FORDELER</p>
+      </div>
+      <div id="cell_4">
+        <p>
+          WordPress er det mest brukte WCMSet med en stor brukerbase, det
+          betyr stort støttenettverk. Er gratis, men kan kjøpe templates og
+          andre funksjoner som gjør det enkelt å bruke.
+        </p>
+      </div>
+      <div id="cell_5">
+        <p>ULEMPER</p>
+      </div>
+      <div id="cell_6">
+        <p>
+          Originalt lagd for å være en blogg-side og mangler i stor grad
+          tilpasning for større og mer komplekse nettsider. Kan være vanskelig
+          å lage egne templates og oppsett.
+        </p>
+      </div>
+      <div id="cell_7">
+        <p>LIKHETER ULIKHETER</p>
+      </div>
+      <div id="cell_8">
+        <p>
+          Designet for mindre nettsider er WordPress et godt verktøy for
+          personlige nettsider. Det er lett å sette seg inn i og kan godt
+          beskrives som et CMS for enhver og alle.
+        </p>
+      </div>
+      <div id="cell_9">
+        <img src="https://www.pngall.com/wp-content/uploads/12/Joomla-PNG-File.png"
+          alt="Joombla logo - source in src-url" width="50" height="50">
+      </div>
+      <div id="cell_10">
+        <p>FORDELER</p>
+      </div>
+      <div id="cell_11">
+        <p>
+          Godt etablert CMS med mange brukere. Joomla er mer rettet mot
+          nettsider av større skalering. Kan fungere uten CMS-delen, noe som
+          gir større fleksbilitet.
+        </p>
+      </div>
+      <div id="cell_12">
+        <p>ULEMPER</p>
+      </div>
+      <div id="cell_13">
+        <p>
+          Noe vanskeligere å sette seg inn, grunnet den økte fleksibiliteten.
+          Ikke like godt vedlikeholdt, mye overflødig materiale i CMSet
+          (extensions and templates).
+        </p>
+      </div>
+      <div id="cell_14">
+        <p>LIKHETER ULIKHETER</p>
+      </div>
+      <div id="cell_15">
+        <p>
+          Joombla har en litt brattere læringskurve enn WordPress, men er
+          allikevel brukervennlig nok til at det kan brukes uten
+          kode-erfaring. Faller litt midt imellom WordPress og f.eks. Drupal.
+        </p>
+      </div>
+      <div id="cell_16">
+        <img src="https://leadgenapp.io/wp-content/uploads/2022/03/06f14d0c25520b2bd1ba003831e6b811.png"
+          alt="Wix logo - source in src-url" width="50" height="50">
+      </div>
+      <div id="cell_17">
+        <p>FORDELER</p>
+      </div>
+      <div id="cell_18">
+        <p>
+          Wix er en fullstending online-basert nettapplikasjon som lar det
+          bygge nettsider med fokus på design. Brukervennlighet (click and
+          drag) er på topp, og web-hosting er en implementert feature i
+          løsningen deres.
+        </p>
+      </div>
+      <div id="cell_19">
+        <p>ULEMPER</p>
+      </div>
+      <div id="cell_20">
+        <p>
+          Mye av det gode innholdet er gjemt bak en pay-wall. Og lite
+          fleksibilitet når det kommer til design utenfor set templates. Ikke
+          direkte lagring av innhold, må lagres via andre løsninger.
+        </p>
+      </div>
+      <div id="cell_21">
+        <p>LIKHETER ULIKHETER</p>
+      </div>
+      <div id="cell_22">
+        <p>
+          WIX kan i utgangspunktet ikke regnes som et rent-CMS, da Wix har
+          størst fokus på design og ikke innhold. Det er allikevel en funksjon
+          for å lagre innhold via third-party applikasjoner.
+        </p>
+      </div>
+    </section>
+    <footer>
+      <ul>
+        <li>
+          <a href="#">
+            <img src="../pictures/facebook.png" alt="Facebook logo" width="50" height="50">
+          </a>
+          <!--<a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by riajulislam - Flaticon</a>-->
+        </li>
+        <li>
+          <a href="#">
+            <img src="../pictures/twitter.png" alt="Twitter logo for social media sharing" width="50" height="50">
+          </a>
+          <!---<a href="https://www.flaticon.com/free-icons/twitter-social-badge" title="twitter social badge icons">Twitter social badge icons created by riajulislam - Flaticon</a>-->
+        </li>
+        <li>
+          <a href="#">
+            <img src="../pictures/instagram.png" alt="Instagram logo for social media sharing" width="50" height="50">
+          </a>
+          <!---<a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by riajulislam - Flaticon</a>-->
+        </li>
+        <li>
+          <a href="#">
+            <img src="../pictures/pinterest.png" alt="Pinterest logo for social media sharing" width="50" height="50">
+          </a>
+          <!---<a href="https://www.flaticon.com/free-icons/pinterest" title="pinterest icons">Pinterest icons created by Pixel Buddha - Flaticon</a>-->
+        </li>
+      </ul>
+    </footer>
+  </div>
+  <script src="../js/hambuger_menu.js"></script>
+</body>
+
 </html>
